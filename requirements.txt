@@ -1,0 +1,93 @@
+flask
+transformers
+torch
+
+
+---
+
+## Multimodal Chatbot 
+
+### Overview
+
+This repository contains the source code for a multimodal chatbot that incorporates text-to-text, voice-to-text, and video-to-text interactions.
+This chatbot is trained using Natural Language Processing (NLP) techniques, including tokenization, stemming, and bag-of-words representation. 
+The underlying model is a feed-forward neural network implemented with PyTorch.
+
+### Features
+
+1. Text-to-Text Interaction:
+   - Leverages NLTK for tokenization and stemming.
+   - Utilizes bag-of-words representation for text-based input.
+
+2. Voice-to-Text Interaction:
+   - Integrates speech recognition for converting voice commands to text.
+   - Employs the `transformers` library for a pre-trained language model (e.g., GPT) to process text input.
+
+3. Video-to-Text Interaction with Sign Detection:
+   - Implements sign detection using OpenCV, MediaPipe, and a pre-trained classifier.
+   - Utilizes the `torch` library to process video frames and extract meaningful textual information.
+
+### Technologies Used
+
+- Python
+- PyTorch
+- NLTK (Natural Language Toolkit)
+- Transformers library
+- Flask (for creating a web interface)
+- OpenCV
+- MediaPipe
+- SpeechRecognition library
+- pyttsx3 (text-to-speech synthesis)
+
+### Setup Instructions
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/multimodal-chatbot.git
+   cd multimodal-chatbot
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Set up and download necessary pre-trained models:
+
+   ```bash
+   # Add any additional setup steps, like downloading NLTK resources, transformers models, etc.
+   ```
+
+### Usage
+
+1. Run the Flask application:
+
+   ```bash
+   python app.py
+   ```
+
+   Access the chatbot through a web interface at [http://localhost:5000](http://localhost:5000).
+
+2. Interact with the chatbot using text, voice, or video inputs.
+
+### Contribution Guidelines
+
+We welcome contributions! If you'd like to contribute to this project, please follow the guidelines outlined in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+### License
+
+This project is licensed under the [MIT License](LICENSE).
+
+### Acknowledgments
+
+- The NLTK project for providing powerful natural language processing tools.
+- The Hugging Face Transformers library for simplifying the integration of pre-trained language models.
+- OpenCV, MediaPipe, and other contributors to the computer vision and image processing community.
+
+### Contact
+
+For any questions, issues, or collaborations, feel free to contact us at [sunai.pathakota4567@gmail.com].
+
+
